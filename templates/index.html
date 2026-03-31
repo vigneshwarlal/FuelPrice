@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fuel Price Prediction</title>
+</head>
+<body>
+
+<h2>Fuel Price Prediction</h2>
+
+<form action="/predict" method="post">
+    <label>City:</label><br>
+    <input type="text" name="city" required><br><br>
+
+    <label>Year:</label><br>
+    <input type="number" name="year" required><br><br>
+
+    <input type="submit" value="Predict">
+</form>
+
+<br>
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
