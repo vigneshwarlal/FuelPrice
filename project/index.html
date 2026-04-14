@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diesel Price Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <h1>⛽ Diesel Price Predictor</h1>
+    <p class="subtitle">Machine Learning based fuel prediction</p>
+
+    <div class="controls">
+      <div class="field">
+        <label>City</label>
+        <select id="citySelect"></select>
+      </div>
+
+      <div class="field">
+        <label>Year</label>
+        <input type="number" id="yearInput" value="2025"/>
+      </div>
+
+      <button onclick="predict()">Predict Price</button>
+    </div>
+
+    <div id="result" class="result hidden"></div>
+
+    <canvas id="chart"></canvas>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
